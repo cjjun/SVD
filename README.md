@@ -5,7 +5,7 @@ This is a ugly implementation of SVD with O(n^3) following two steps:
 
 (i)The basic ideas for diagonization of symmetric matrix are:
 
-    (1) Use the iteration x_{n+1} = ||Ax_{n}|| , x = x / ||x|| to find x with respect to eigenvalue with largest norm. THIS WORKABLE AND STABLE ONLY FOR SYMMETRIC MATRIX
+    (1) Use the iteration x_{n+1} = ||Ax_{n}|| , x = x / ||x|| to find x with respect to eigenvalue with largest norm. THIS  WORKABLE AND STABLE ONLY FOR SYMMETRIC MATRIX
 
     (2) Every iteration amplifies the components in different eigenvalues subspaces with amplitude of norm of respecting eigenvalues. Using Gram-smith normalization to eliminate projection on previous eigenvector space. This has to be done every iteration since even projection on previous eigenvectors with 1e-16 precision error can be amplified only after several iterations and  take dominance.
 
